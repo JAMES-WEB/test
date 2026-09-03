@@ -63,10 +63,14 @@ Height = float(input("Enter your height in meters (m): "))
 BMI = Weight / (Height ** 2) # kg/m^2
 
 if(BMI < 18.5):
+    print("BMI: ", round(BMI, 2))
     print("You are underweight.")
 elif(BMI >= 18.5 and BMI <= 24.9):
+    print("BMI: ", round(BMI, 2))
     print("You have a normal weight.")
 elif(BMI >= 25 and BMI <= 29.9):
+    print("BMI: ", round(BMI, 2))
     print("You are overweight.")
 else:
+   print("BMI: ", round(BMI, 2))
    print("You are obese.")
