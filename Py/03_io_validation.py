@@ -48,60 +48,101 @@
 
 
 
-while True:
-    # Input Validation
-    score = 0
+
+# while True:
+#     # Input Validation
+#     score = 0
      
-    # Question 1 - I/O Manipulation
-    while True:
-        try: 
-            X = int(input("Question 1: What is the square of 2? "))
-            if X == 4:
-                print("Congratulations! Your answer is correct.")
-                score += 1
-                break
-            else:
-                print("Your answer is wrong.")
-                break
-        except ValueError:
-            print("Please enter a valid number!")
+#     # Question 1 - I/O Manipulation
+#     while True:
+#         try: 
+#             X = int(input("Question 1: What is the square of 2? "))
+#             if X == 4:
+#                 print("Congratulations! Your answer is correct.")
+#                 score += 1
+#                 break
+#             else:
+#                 print("Your answer is wrong.")
+#                 break
+#         except ValueError:
+#             print("Please enter a valid number!")
+#         except Exception  as e:
+#              print(f"An error occured: {e}")
 
 
 
-    # Question 2 - String Manipulation
-    X = input("Question 2: What is the result of 'Hello'.upper()? ")
-    if X == "HELLO":
-            print("Congratulations! Your answer is correct.")
-            score += 1
-    else:
-            print("Your answer is wrong.")
+#     # Question 2 - String Manipulation
+#     X = input("Question 2: What is the result of 'Hello'.upper()? ")
+#     if X == "HELLO":
+#             print("Congratulations! Your answer is correct.")
+#             score += 1
+#     else:
+#             print("Your answer is wrong.")
 
-    # Question 3 - Data Type
+#     # Question 3 - Data Type
 
-    X = input("Question 3: What data type is 10.5? ")
-    if X.lower() == "float":
-            print("Congratulations! Your answer is correct.")
-            score += 1
-    else:
-            print("Your answer is wrong.")
+#     X = input("Question 3: What data type is 10.5? ")
+#     if X.lower() == "float":
+#             print("Congratulations! Your answer is correct.")
+#             score += 1
+#     else:
+#             print("Your answer is wrong.")
 
 
-    # Output Validation
+#     # Output Validation
 
-    print("\n===== QUIZ RESULT =====")
-    print(f"You got {score} out of 3 questions correct.")
+#     print("\n===== QUIZ RESULT =====")
+#     print(f"You got {score} out of 3 questions correct.")
 
-    if score == 3:
-        print("Excellent! You answered all questions correctly.")
-        break
-    elif score >= 2:
-        print("Good job! You answered most questions correctly.")
-        break
-    elif score == 1:
-        print("You got 1 question correct. Keep practicing!")
-        break
-    elif score == 0:
-        print("You got 0 questions correct. Please try again!")
-        print(f"Your score is {score} out of 3 questions correct.")
-        print("Restarting the quiz...\n")
-        continue
+#     if score == 3:
+#         print("Excellent! You answered all questions correctly.")
+#         break
+#     elif score >= 2:
+#         print("Good job! You answered most questions correctly.")
+#         break
+#     elif score == 1:
+#         print("You got 1 question correct. Keep practicing!")
+#         break
+#     elif score == 0:
+#         print("You got 0 questions correct. Please try again!")
+#         print(f"Your score is {score} out of 3 questions correct.")
+#         print("Restarting the quiz...\n")
+#         continue
+
+
+
+
+
+# while True:
+#     X = int(input("Question 1: What is the square of 2? "))
+#     if X == 4:
+#         print("Congratulations! Your answer is correct.")
+#     else:
+#         print("Your answer is wrong.")
+
+
+
+# Figure1 = int(input("Enter a number for Figure 1: "))
+# Figure2 = int(input("Enter a number for Figure 2: "))
+# Operation = input("Enter an operation (+, -, *, /): ")
+
+# if Operation == "+":
+#     result = Figure1 + Figure2
+
+# elif Operation == "-":
+#     result = Figure1 - Figure2
+
+# elif Operation == "*":
+#     result = Figure1 * Figure2
+
+# elif Operation == "/":
+#     if Figure2 != 0:
+#         result = Figure1 / Figure2
+#     else:
+#         result = "Error: division by zero"
+
+# else:
+#     result = "Invalid operation"
+
+# print("Result:", result)
+# print('--'*100)
