@@ -37,3 +37,36 @@
 #     print("It's the weekend!")
 # else:
 #     print("It's a weelday.")
+
+
+# weather = "sunny"
+# temperature = 75
+
+# if weather == "sunny":
+#     if temperature > 70:
+#         print("It's sunny and warm.")
+#     else:
+#         print("It's sunny but cool.")
+
+
+
+# 1.Write  a  program  that  categorizes  BMI  (Body  Mass  Index)  
+# into underweight(<18.5),  normal  weight(18.5-24.9),  
+# overweight(25-29.9),  and  obese(30  or  more).  
+# The  program  should  take  the  user's weight (in kilograms) 
+# and height (in meters) as input, 
+# calculate the BMI, and print the corresponding category.
+
+Weight = float(input("Enter your weight in kilograms (kg): "))
+Height = float(input("Enter your height in meters (m): "))
+
+BMI = Weight / (Height ** 2) # kg/m^2
+
+if(BMI < 18.5):
+    print("You are underweight.")
+elif(BMI >= 18.5 and BMI <= 24.9):
+    print("You have a normal weight.")
+elif(BMI >= 25 and BMI <= 29.9):
+    print("You are overweight.")
+else:
+   print("You are obese.")
