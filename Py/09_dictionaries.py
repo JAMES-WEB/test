@@ -79,3 +79,5 @@ student_records["student_001"]["age"] = 20
 # "Student ID: [id], Name:[name], Major:[major]"
 for student_id, student in student_records.items():
     print(f"Student ID: {student_id}, Name: {student['name']}, Major: {student['major']}")
+    info = f"Name: {student['name']}, Major: {student['major']}"
+    print(f"Student ID: {student_id}, {info}")
